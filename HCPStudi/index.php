@@ -1,96 +1,65 @@
-<?php require_once __DIR__ . "/templates/header.php";
-
-
-
+<?php 
+require_once __DIR__ . "/lib/session.php";
 ?>
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accueil</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .image-container {
+            height: 700px;
+            overflow: hidden;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+            border-radius: 10px;
+        }
+        .image-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body>
 
+<?php require_once __DIR__ . "/templates/header.php"; ?>
 
-
-    <div class="px-4 pt-5 my-5 text-center border-bottom">
-      <img src="asset/image/logo.jpg" class="d-block mx-lg-auto img-fluid" alt="Logo CheckIt" width="500" loading="lazy">
+<div class="px-4 pt-5 my-5 text-center border-bottom">
+    <img src="asset/image/logo.jpg" class="d-block mx-lg-auto img-fluid" alt="Logo CheckIt" width="500" loading="lazy">
     <h1 class="display-4 fw-bold text-body-emphasis">HAIRANDCAREPARIS</h1>
     <div class="col-lg-6 mx-auto">
-      <p class="lead mb-4">Experience the best, one hair at the time, while feeling.. beautiful </p>
-      <div class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-5">
+        <p class="lead mb-4">Experience the best, one hair at a time, while feeling beautiful</p>
+    </div>
+</div>  
+
+<div class="container px-4 py-5">
+    <h2 class="pb-2 fw-bold border-bottom">OUR WORK</h2>
+
+    <div class="row g-4 py-5">
+        <div class="col-12 col-md-4">
+            <div class="image-container">
+                <img src="asset/image/index_img_2.jpg" alt="Coiffure 1">
+            </div>
+        </div>
+        <div class="col-12 col-md-4">
+            <div class="image-container">
+                <img src="asset/image/index_img_3.jpg" alt="Coiffure 2">
+            </div>
+        </div>
+        <div class="col-12 col-md-4">
+            <div class="image-container">
+                <img src="asset/image/index_img_1.jpg" alt="Coiffure 3">
+            </div>
+        </div>
+    </div>
 </div>
-    </div>
-    <div class="overflow-hidden" style="max-height: 30vh;">
-      <div class="container px-5">
-      </div>
-    </div>
-  </div>  
 
-  <div class="container px-4 py-5" id="custom-cards">
-    <h2 class="pb-2 border-bottom">Home</h2>
+<?php require_once __DIR__ . "/templates/footer.php"; ?>
 
-    <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
-      <div class="col">
-        <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('unsplash-photo-1.jpg');">
-          <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
-            <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Booking</h3>
-            <ul class="d-flex list-unstyled mt-auto">
-              <li class="me-auto">
-                <img src="https://github.com/twbs.png" alt="Bootstrap" width="32" height="32" class="rounded-circle border border-white">
-              </li>
-              <li class="d-flex align-items-center me-3">
-                <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"></use></svg>
-                <small>Earth</small>
-              </li>
-              <li class="d-flex align-items-center">
-                <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"></use></svg>
-                <small>3d</small>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-
-      <div class="col">
-        <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('unsplash-photo-2.jpg');">
-          <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
-            <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Hairstyles</h3>
-            <ul class="d-flex list-unstyled mt-auto">
-              <li class="me-auto">
-                <img src="https://github.com/twbs.png" alt="Bootstrap" width="32" height="32" class="rounded-circle border border-white">
-              </li>
-              <li class="d-flex align-items-center me-3">
-                <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"></use></svg>
-                <small>Pakistan</small>
-              </li>
-              <li class="d-flex align-items-center">
-                <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"></use></svg>
-                <small>4d</small>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-
-      <div class="col">
-        <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('unsplash-photo-3.jpg');">
-          <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
-            <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Hair & Accéssoires</h3>
-            <ul class="d-flex list-unstyled mt-auto">
-              <li class="me-auto">
-                <img src="https://github.com/twbs.png" alt="Bootstrap" width="32" height="32" class="rounded-circle border border-white">
-              </li>
-              <li class="d-flex align-items-center me-3">
-                <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"></use></svg>
-                <small>California</small>
-              </li>
-              <li class="d-flex align-items-center">
-                <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"></use></svg>
-                <small>5d</small>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <?php require_once __DIR__. "/templates/footer.php" ?>
-
-   
-
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

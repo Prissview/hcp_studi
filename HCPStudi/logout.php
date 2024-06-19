@@ -3,7 +3,7 @@
   
   
 
-//prevention contre les attaques de session
+//prevention contre les attaques de fixation de session
   session_regenerate_id(true);
 
 //supprime les données du serveur

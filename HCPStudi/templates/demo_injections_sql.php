@@ -5,9 +5,9 @@
 
 $pdo = new PDO('mysql:dbname=hcpstudi;host=localhost;charset=utf8mb4', 'root', '');
 $id = $_GET['id'];
-
+var_dump($id);
 $query = $pdo->query("SELECT * FROM client WHERE id_client = 1");
 $result = $query->fetch(PDO::FETCH_ASSOC);
 
-
+var_dump($result);
 ?>
