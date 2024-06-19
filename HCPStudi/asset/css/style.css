@@ -1,0 +1,29 @@
+
+
+/* Cadre d'image "Hairstyles" */
+.card-img-container {
+    height: 100%; /* Adjust this value as needed */
+    overflow: hidden;
+}
+
+/* Taille de l'image dans le cadre "Hairstyles" */
+.card-img-top {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Taille de l'image "Appointments" */
+.image-appointment {
+    max-width: 60%; 
+    height: auto; 
+    display: block; 
+    margin: auto; 
+}
+
+/* Séparateur "Appointments" */
+.separator-line {
+    border-left: 2px solid;
+    height: 100%;
+}
+
